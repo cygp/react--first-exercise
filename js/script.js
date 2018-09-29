@@ -72,13 +72,14 @@ var MovieDesc = React.createClass({
   },
 });
 // this version works
+
 // var Movie = React.createClass({
 // 	propTypes: {
 //     movie: React.PropTypes.object.isRequired,
 //   	},
 // 	render: function() {
 // 		return (
-// 			React.createElement(MovieList, {list: this.props.movie.list, key: this.props.movie.id},
+// 			React.createElement('li', {key: this.props.movie.id},
 // 	      	React.createElement(MovieTitle, {title: this.props.movie.title}),
 // 	      	React.createElement(MovieDesc, {desc: this.props.movie.desc}),
 // 	      	React.createElement(MovieImg, {img: this.props.movie.img})
@@ -86,13 +87,14 @@ var MovieDesc = React.createClass({
 // 		)
 // 	}
 // });
+
 var Movie = React.createClass({
 	propTypes: {
     movie: React.PropTypes.object.isRequired,
   	},
 	render: function() {
 		return (
-			React.createElement('li', {key: this.props.movie.id},
+			React.createElement(MovieList, {list: this.props.movie.list, key: this.props.movie.id},
 	      	React.createElement(MovieTitle, {title: this.props.movie.title}),
 	      	React.createElement(MovieDesc, {desc: this.props.movie.desc}),
 	      	React.createElement(MovieImg, {img: this.props.movie.img})
