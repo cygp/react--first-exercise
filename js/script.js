@@ -29,7 +29,7 @@ var movies = [
 //Components
 var MovieImg = React.createClass({
   propTypes: {
-    img: React.PropTypes.object.isRequired,
+    img: React.PropTypes.string.isRequired,
   },
 
   render: function() {
@@ -51,7 +51,7 @@ var MovieImg = React.createClass({
 // });
 var MovieTitle = React.createClass({
   propTypes: {
-    title: React.PropTypes.object.isRequired,
+    title: React.PropTypes.string.isRequired,
   },
 
   render: function() {
@@ -62,7 +62,7 @@ var MovieTitle = React.createClass({
 });
 var MovieDesc = React.createClass({
   propTypes: {
-    desc: React.PropTypes.object.isRequired,
+    desc: React.PropTypes.string.isRequired,
   },
 
   render: function() {
